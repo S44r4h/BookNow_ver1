@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fontit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> <!-- Flatpicker -->
+    <title>Book now</title>
+</head>
+<body>
+    
+    <header>
+      <nav class="navigation">
+        <div class="containerNav">
+            <a href="#" class="brand-logo"><img src="logo1pieni.png" class="brandLogo" alt="brand's logo"></a>
+              <!--LOGO-->
+        <ul class="navMenu" id="menu"> <!--NAVI-->
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Book Now</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+
+        <!--VARAUSNAPPI -->
+            <a href="#" class="button-link">
+            <button class="button">
+                <span class="button-text"><strong>BOOK NOW</strong></span>  
+                <div class="fill-container"></div>
+              </button>
+            </a>
+        <!--VARAUSNAPPI -->
+
+
+        </div>
+    </nav>
+        <!--LANDINGIIN KUVA-->     
+</header>
+
+
+    <div class="wrapper">
+    <!-- Form START -->
+    <div class="container-form">
+
+      
+        <form action="#">
+
+          <h1>Book your massage</h1>
+          
+            <div class="input-box">
+              <div class="input-field">
+                <label for="lname">First name:</label>
+                <input type="text" placeholder="First name" required>
+              </div>
+              <div class="input-field">
+                <label for="lname">Last Name:</label>
+                <input type="text" placeholder="Last name" required>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <div class="input-field">
+                <label for="lname">Email:</label>
+                <input type="email" placeholder="Email" required>
+              </div>
+              <div class="input-field">
+                <label for="lname">Phone number:</label>
+                <input type="tel" placeholder="Phone Number" required>
+              </div>
+            </div>
+      
+
+            <div class="input-box">
+              <div class="input-field">
+                <label for="appointment-time">Appointment (date and time):</label>
+                <input id="date1" type="datetime-local"  step="1800" placeholder="dd.mm.yyyy" required>
+              </div>
+              <div class="input-field">
+                <label for="referrer">Choose massage type:</label>
+                <select id="referrer" name="referrer">
+                  <option value="" hidden invalid>(select one)</option>
+                  <option value="1">Thai massage</option>
+                  <option value="2">India massage</option>
+                  <option value="3">Sport massage</option>
+                  <option value="4">Some massage</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div class="input-box-center">
+              <div class="input-field">
+                <label for="bio">Do you have something to say?: </label>
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="e.g Can i have fragrance free treatment?"></textarea>
+              </div>
+            </div>
+      
+
+            
+            
+              <button class="button large">
+                  <span class="button-text">Submit</span>  
+                  <div class="fill-container"></div>
+              </button>
+            
+        </form>
+      </div>
+    </div>
+    <!-- Form END -->
+    <div class="footer">
+      <footer>
+        <center>
+        <div class="card">
+                    <div class="card-body">
+                        <div class="card-content">
+                        <h5 class="card-title" style="color: #777E5C; font-size: 25px;">NovaSoothe</h5><br>
+                            <div class="footerIcons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>   <!--firm's page-->
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>   <!--firm's page-->
+                            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>   <!--firm's page-->
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>   <!--firm's page-->
+                            <a href="#"><i class="fa-solid fa-phone"></i></a>   <!--firm's page-->
+                            </div>
+                        <p class="cardText">
+                            <i class="fa-regular fa-copyright"></i>
+                            2024. All rights reserved. NovaSoothe | Helsinki 01900 |  Hakolijantie 11 A
+                        </p>
+                    </div>
+                </div>
+                    <div class="card-second"><!--empty--></div>   
+        </div>
+        
+        </center>
+            
+        </footer>
+    </div>
+</body>
+
+
+<!-- Tässä flatpickr kalenteri -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="javascriptBooknow.js"></script>
+</html>
